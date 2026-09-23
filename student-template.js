@@ -58,7 +58,14 @@ function countEven(from, to) {
 // Если такого числа нет, вернуть null.
 // divisor не равен 0. Используйте цикл и break.
 function findFirstDivisible(from, to, divisor) {
-  // TODO
+ let result = null; 
+ for (let i = from; i <= to; i++) {
+  if (i % divisor === 0) {
+    result = i; 
+    break;
+  }
+ }
+ return result;
 }
 
 // 6. Строка таблицы умножения
@@ -66,7 +73,7 @@ function findFirstDivisible(from, to, divisor) {
 // разделённых одним пробелом.
 // Пример: multiplicationLine(3, 5) -> "3 6 9 12 15"
 function multiplicationLine(number, count) {
-  // TODO
+  
 }
 
 module.exports = {
