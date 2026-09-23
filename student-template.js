@@ -9,7 +9,11 @@
 // Вернуть сумму всех целых чисел от from до to включительно.
 // Гарантируется, что from <= to.
 function sumRange(from, to) {
-  // TODO
+  let sum = 0;
+  for (let i = from; i <= to; i++) {
+    sum += i; 
+  }
+  return sum;
 }
 
 // 2. Возведение в степень
