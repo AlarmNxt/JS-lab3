@@ -73,7 +73,11 @@ function findFirstDivisible(from, to, divisor) {
 // разделённых одним пробелом.
 // Пример: multiplicationLine(3, 5) -> "3 6 9 12 15"
 function multiplicationLine(number, count) {
-  
+  let line = number.toString();
+  for (let i = 2; i <= count; i++) {
+    line += " " + number * i;
+  }
+  return line;
 }
 
 module.exports = {
