@@ -21,14 +21,18 @@ function sumRange(from, to) {
 // exponent — целое неотрицательное число.
 // В этой задаче нельзя использовать ** и Math.pow().
 function power(base, exponent) {
-  // TODO
+  let result  = 1;
+  for (let i = 0; i < exponent; i++) {
+    result *= base; 
+  }
+  return result; 
 }
 
 // 3. Факториал
 // Вернуть n! для целого n >= 0.
 // 0! и 1! равны 1.
 function factorial(n) {
-  // TODO
+  
 }
 
 // 4. Количество чётных чисел
