@@ -32,7 +32,11 @@ function power(base, exponent) {
 // Вернуть n! для целого n >= 0.
 // 0! и 1! равны 1.
 function factorial(n) {
-  
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result *= i; 
+  }
+  return result;
 }
 
 // 4. Количество чётных чисел
