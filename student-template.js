@@ -43,7 +43,14 @@ function factorial(n) {
 // Вернуть количество чётных целых чисел в диапазоне [from, to].
 // Гарантируется, что from <= to.
 function countEven(from, to) {
-  // TODO
+  let count = 0;
+
+  for(let i = from; i <= to; i++) {
+    if (i % 2 === 0) {
+      count++;
+    }
+  }
+  return count;
 }
 
 // 5. Первое число, кратное делителю
